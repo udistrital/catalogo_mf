@@ -1,0 +1,93 @@
+<!-- <section class="catalogo-container">
+  <div class="catalogo-programas">
+    <h2>GAIA - Gestión administrativa</h2>
+    <div class="app-grid">
+      <a
+        *ngFor="let app of aplicaciones()"
+        class="app-card"
+        [href]="app.enlace"
+        target="_blank"
+      >
+        <h2>{{ app.nombre }}</h2>
+        <img [src]="app.imagen" [alt]="app.nombre" class="app-image" />
+        <p class="descripcion">{{ app.descripcion }}</p>
+      </a>
+    </div>
+  </div>
+  
+</section> -->
+
+<section class="catalogo-container">
+  <div class="catalogo-programas">
+    <h2>GAIA - Gestión administrativa</h2>
+    <div class="app-grid">
+      <a *ngFor="let app of aplicaciones()" class="app-card" [href]="app.enlace" target="_blank" >
+        <div class="card-inner">
+          <div class="card-front">
+            <img [src]="app.imagen" [alt]="app.nombre" class="app-image" />
+          </div>
+
+          <div class="card-back">
+            <h2 class="nombre-progama">{{ app.nombre }}</h2>
+            <p class="descripcion">{{ app.descripcion }}</p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="catalogo-programas">
+    <h2>URANO - Gestión académica</h2>
+    <div class="app-grid">
+      <a *ngFor="let app of aplicacionesUrano()" class="app-card" [href]="app.enlace" target="_blank">
+        <div class="card-inner">
+          <div class="card-front">
+            <img [src]="app.imagen" [alt]="app.nombre" class="app-image" />
+          </div>
+
+          <div class="card-back">
+            <h2 class="nombre-progama">{{ app.nombre }}</h2>
+            <p class="descripcion">{{ app.descripcion }}</p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="catalogo-programas">
+    <h2>NIX - Gestión financiera</h2>
+    <div class="app-grid">
+      <a *ngFor="let app of aplicacionesNix()" class="app-card" [href]="app.enlace" target="_blank">
+        <div class="card-inner">
+          <div class="card-front">
+            <img [src]="app.imagen" [alt]="app.nombre" class="app-image" />
+          </div>
+
+          <div class="card-back">
+            <h2 class="nombre-progama">{{ app.nombre }}</h2>
+            <p class="descripcion">{{ app.descripcion }}</p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="catalogo-programas">
+    <h2>ATHENEA - Gestión del conocimiento</h2>
+    <div class="app-grid">
+      <a *ngFor="let app of aplicacionesAthenea()" class="app-card" [href]="app.enlace" target="_blank">
+        <div class="card-inner">
+          <div class="card-front">
+            <img [src]="app.imagen" [alt]="app.nombre" class="app-image" />
+          </div>
+
+          <div class="card-back">
+            <h2 class="nombre-progama">{{ app.nombre }}</h2>
+            <p class="descripcion">{{ app.descripcion }}</p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+

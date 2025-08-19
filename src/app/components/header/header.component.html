@@ -1,0 +1,17 @@
+<div class="header-container">
+  <div class="header-logo-container">
+    <a [routerLink]="['/']">
+      <img src="{{basePathAssets + 'logotipos_aplicativos_svg/ud.svg'}}" alt="logo-udistrital" />
+    </a>
+  </div>
+  <div class="header-title-container">
+    <h1>Catálogo de Aplicativos</h1>
+  </div>
+
+  <div class="header-lang-container">
+    <mat-icon class="lang-icon">language</mat-icon>
+    <mat-select class="lang-selector" [(value)]="langCookie" (selectionChange)="cambiarIdioma($event.value)">
+      <mat-option *ngFor="let lang of langs" [value]="lang">{{ lang }}</mat-option>
+    </mat-select>
+  </div>
+</div>
