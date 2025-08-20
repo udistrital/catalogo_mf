@@ -1,5 +1,6 @@
 import { Component, signal } from '@angular/core';
 import { NgFor } from '@angular/common';
+import { TranslatePipe } from '@ngx-translate/core';
 
 interface Aplicativo {
   nombre: string;
@@ -10,83 +11,83 @@ interface Aplicativo {
 
 @Component({
   selector: 'catalogo',
-  imports: [NgFor],
+  imports: [NgFor, TranslatePipe],
   templateUrl: './catalogo.component.html',
   styleUrl: './catalogo.component.scss'
 })
 export class CatalogoComponent {
-  title = 'catalogo_mf';
+
   aplicaciones = signal<Aplicativo[]>([
     {
       nombre: 'Agora',
-      descripcion: 'Gestión de matrícula, notas, horarios y otros trámites académicos.',
-      enlace: 'https://sga.universidad.edu.co',
+      descripcion: 'Sistema para la gestión de proveedores que apoya procesos de cotización y contratación.',
+      enlace: 'https://evaluacion.portaloas.udistrital.edu.co',
       imagen: 'assets/images/agora.png'
     },
     {
       nombre: 'Argo',
-      descripcion: 'Acceso a tesis, investigaciones y documentos institucionales.',
-      enlace: 'https://repositorio.universidad.edu.co',
+      descripcion: 'Sistema de apoyo para la gestión de procesos precontractuales, contractuales y de compras',
+      enlace: 'https://funcionarios.portaloas.udistrital.edu.co/argo',
       imagen: 'assets/images/argo.png'
     },
     {
       nombre: 'Arka I',
-      descripcion: 'Plataforma de aprendizaje y materiales académicos en línea.',
-      enlace: 'https://aulavirtual.universidad.edu.co',
+      descripcion: 'Sistema para la gestión de los movimientos de almacén e inventarios de bienes',
+      enlace: 'https://funcionarios.portaloas.udistrital.edu.co/arka',
       imagen: 'assets/images/arka1.png'
     },
     {
       nombre: 'Arka II',
-      descripcion: 'Registro y seguimiento de proyectos de investigación institucional.',
-      enlace: 'https://sicud.universidad.edu.co',
+      descripcion: 'Sistema para la gestión de los movimientos de almacén e inventarios de bienes',
+      enlace: 'https://arka.portaloas.udistrital.edu.co',
       imagen: 'assets/images/arka2.png'
     },
     {
       nombre: 'Módulo de cumplidos',
-      descripcion: 'Gestión de matrícula, notas, horarios y otros trámites académicos.',
-      enlace: 'https://sga.universidad.edu.co',
+      descripcion: 'Sistema para la gestión de informes sobre las actividades laborales de los contratistas.',
+      enlace: 'https://contratistas.portaloas.udistrital.edu.co',
       imagen: 'assets/images/moduloCumplidos.png'
     },
     {
       nombre: 'Oikos',
-      descripcion: 'Acceso a tesis, investigaciones y documentos institucionales.',
-      enlace: 'https://repositorio.universidad.edu.co',
+      descripcion: 'Sistema para la gestión de dependencias y espacios físicos de la universidad.',
+      enlace: 'https://oikosmicroclientes.portaloas.udistrital.edu.co',
       imagen: 'assets/images/oikos.png'
     },
     {
       nombre: 'Perseo',
-      descripcion: 'Plataforma de aprendizaje y materiales académicos en línea.',
-      enlace: 'https://aulavirtual.universidad.edu.co',
+      descripcion: 'Sistema para el desarrollo de procesos electorales dentro de la universidad de forma digital.',
+      enlace: 'https://voto.portaloas.udistrital.edu.co',
       imagen: 'assets/images/perseoVotoElectronico.png'
     },
     {
       nombre: 'Módulo de resoluciones',
-      descripcion: 'Registro y seguimiento de proyectos de investigación institucional.',
-      enlace: 'https://sicud.universidad.edu.co',
+      descripcion: 'Sistema de gestión de los docentes de vinculación especial que apoya procesos de RRHH.',
+      enlace: 'https://resoluciones.portaloas.udistrital.edu.co',
       imagen: 'assets/images/moduloResoluciones.png'
     },
     {
       nombre: 'Sísifo',
-      descripcion: 'Gestión de matrícula, notas, horarios y otros trámites académicos.',
-      enlace: 'https://sga.universidad.edu.co',
+      descripcion: 'Sistema para la gestión de planes de mejoramiento en los procesos académico administrativos',
+      enlace: 'https://pruebassisifomicroclientes.portaloas.udistrital.edu.co',
       imagen: 'assets/images/sisifo.png'
     },
     {
       nombre: 'Temis',
-      descripcion: 'Acceso a tesis, investigaciones y documentos institucionales.',
-      enlace: 'https://repositorio.universidad.edu.co',
+      descripcion: 'Sistema de apoyo en el cálculo de las cuotas partes pensionales con entidades externas.',
+      enlace: 'https://funcionarios.portaloas.udistrital.edu.co/gefad',
       imagen: 'assets/images/temis.png'
     },
     {
       nombre: 'Iris',
-      descripcion: 'Plataforma de aprendizaje y materiales académicos en línea.',
-      enlace: 'https://aulavirtual.universidad.edu.co',
+      descripcion: 'Sistema para la gestión de trámites generados al interior de la universidad.',
+      enlace: 'https://iris.portaloas.udistrital.edu.co/scp/login.php',
       imagen: 'assets/images/iris.png'
     },
     {
       nombre: 'Ud App',
-      descripcion: 'Registro y seguimiento de proyectos de investigación institucional.',
-      enlace: 'https://sicud.universidad.edu.co',
+      descripcion: 'Aplicación móvil para el uso de carnets de la universidad.',
+      enlace: 'https://play.google.com/store/apps/details?id=com.scrinio.udapp',
       imagen: 'assets/images/udapp.png'
     }
   ]);
@@ -94,56 +95,50 @@ export class CatalogoComponent {
   aplicacionesUrano = signal<Aplicativo[]>([
     {
       nombre: 'APEA',
-      descripcion: 'Gestión de matrícula, notas, horarios y otros trámites académicos.',
-      enlace: 'https://sga.universidad.edu.co',
+      descripcion: 'NA',
+      enlace: '',
       imagen: 'assets/images/apea.png'
     },
     {
-      nombre: 'Campus virtual',
-      descripcion: 'Acceso a tesis, investigaciones y documentos institucionales.',
-      enlace: 'https://repositorio.universidad.edu.co',
-      imagen: 'assets/images/campusVirtual.png'
-    },
-    {
       nombre: 'Jano',
-      descripcion: 'Plataforma de aprendizaje y materiales académicos en línea.',
-      enlace: 'https://aulavirtual.universidad.edu.co',
+      descripcion: 'Sistema para registro de hojas de vida de contratistas.',
+      enlace: 'https://funcionarios.portaloas.udistrital.edu.co/jano',
       imagen: 'assets/images/jano.png'
     },
     {
       nombre: 'Kyron',
-      descripcion: 'Registro y seguimiento de proyectos de investigación institucional.',
-      enlace: 'https://sicud.universidad.edu.co',
+      descripcion: 'Sistema para el trámite de información y gestiones de docentes.',
+      enlace: 'https://funcionarios.portaloas.udistrital.edu.co/kyron',
       imagen: 'assets/images/kyron.png'
     },
     {
       nombre: 'Pólux',
-      descripcion: 'Gestión de matrícula, notas, horarios y otros trámites académicos.',
-      enlace: 'https://sga.universidad.edu.co',
+      descripcion: 'Sistema para el seguimiento y gestión de trabajos de grado de los estudiantes.',
+      enlace: 'https://polux.portaloas.udistrital.edu.co',
       imagen: 'assets/images/polux.png'
     },
     {
       nombre: 'SGA',
-      descripcion: 'Acceso a tesis, investigaciones y documentos institucionales.',
-      enlace: 'https://repositorio.universidad.edu.co',
+      descripcion: 'Sistema para la gestión de trámites académicos para estudiantes.',
+      enlace: 'https://funcionarios.portaloas.udistrital.edu.co',
       imagen: 'assets/images/sga.png'
     },
     {
       nombre: 'SGA Posgrado',
-      descripcion: 'Plataforma de aprendizaje y materiales académicos en línea.',
-      enlace: 'https://aulavirtual.universidad.edu.co',
+      descripcion: 'Sistema para la gestión de trámites académicos para estudiantes solo de posgrado.',
+      enlace: 'https://sgamicroclientes.portaloas.udistrital.edu.co',
       imagen: 'assets/images/sgaPosgrado.png'
     },
     {
       nombre: 'Siciud',
-      descripcion: 'Registro y seguimiento de proyectos de investigación institucional.',
-      enlace: 'https://sicud.universidad.edu.co',
+      descripcion: 'Sistema para el registro y seguimiento de proyectos de investigación institucional.',
+      enlace: '',
       imagen: 'assets/images/siciud.png'
     },
     {
       nombre: 'Concurso docente',
-      descripcion: 'Gestión de matrícula, notas, horarios y otros trámites académicos.',
-      enlace: 'https://sga.universidad.edu.co',
+      descripcion: 'Sistema para el registro de vida de docentes.',
+      enlace: 'https://funcionarios.portaloas.udistrital.edu.co/concurso',
       imagen: 'assets/images/concursoDocente.png'
     }
   ]);
@@ -151,26 +146,26 @@ export class CatalogoComponent {
   aplicacionesNix = signal<Aplicativo[]>([
     {
       nombre: 'Titán',
-      descripcion: 'Gestión de matrícula, notas, horarios y otros trámites académicos.',
-      enlace: 'https://sga.universidad.edu.co',
+      descripcion: 'Sistema para construir las diferentes nóminas y pago de honorarios de compromisos contractuales.',
+      enlace: 'https://titan.portaloas.udistrital.edu.co',
       imagen: 'assets/images/titan.png'
     },
     {
       nombre: 'Sisgplan',
-      descripcion: 'Acceso a tesis, investigaciones y documentos institucionales.',
-      enlace: 'https://repositorio.universidad.edu.co',
+      descripcion: 'Sistema para apoyar los procesos financieros y generar los reportes a entes de control.',
+      enlace: 'https://planeacion.portaloas.udistrital.edu.co',
       imagen: 'assets/images/sisgplan.png'
     },
     {
       nombre: 'Samanta',
-      descripcion: 'Plataforma de aprendizaje y materiales académicos en línea.',
-      enlace: 'https://aulavirtual.universidad.edu.co',
+      descripcion: 'Sistema de comunicación entre usuario y Unión Soluciones, incluyendo casos de soporte de estos.',
+      enlace: '',
       imagen: 'assets/images/samanta.png'
     },
     {
       nombre: 'Sofia',
-      descripcion: 'Registro y seguimiento de proyectos de investigación institucional.',
-      enlace: 'https://sicud.universidad.edu.co',
+      descripcion: 'Sistema de información financiera que facilita la gestión contable y financiera.',
+      enlace: 'https://udistrital-sofia.unionsoluciones.com/seguridadweb/webcommon/acceso.jsf',
       imagen: 'assets/images/sofia.png'
     }
   ]);
@@ -178,20 +173,20 @@ export class CatalogoComponent {
   aplicacionesAthenea = signal<Aplicativo[]>([
     {
       nombre: 'Knowage',
-      descripcion: 'Gestión de matrícula, notas, horarios y otros trámites académicos.',
-      enlace: 'https://sga.universidad.edu.co',
+      descripcion: 'Sistema de análisis de información cruda y gestión de reportes.',
+      enlace: 'https://inteligenciainstitucional.portaloas.udistrital.edu.co/knowage',
       imagen: 'assets/images/knowage.png'
     },
     {
       nombre: 'Metabase',
-      descripcion: 'Acceso a tesis, investigaciones y documentos institucionales.',
-      enlace: 'https://repositorio.universidad.edu.co',
+      descripcion: 'Sistemas para la gestión y visualización de reportes estadísticos.',
+      enlace: 'https://inteligenciainstitucional.portaloas.udistrital.edu.co',
       imagen: 'assets/images/metaBase.png'
     },
     {
       nombre: 'Base de conocimiento',
-      descripcion: 'Plataforma de aprendizaje y materiales académicos en línea.',
-      enlace: 'https://aulavirtual.universidad.edu.co',
+      descripcion: 'Sistema para la gestión de información sobre los aplicativos, usuarios y procesos de la universidad.',
+      enlace: 'https://conocimiento.portaloas.udistrital.edu.co',
       imagen: 'assets/images/baseConocimiento.png'
     }
   ]);
