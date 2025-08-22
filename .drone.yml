@@ -1,0 +1,78 @@
+kind: pipeline
+name: oas_cliente_ci
+
+steps:
+- name: nodejs_release
+  image: node:20
+  commands:
+    - node --version
+    - npm i
+    - npm run build:test
+  when:
+    branch:
+      - release/*
+    event:
+      - push
+
+- name: nodejs_master
+  image: node:20
+  commands:
+    - node --version
+    - npm i
+    - npm run build:prod
+  when:
+    branch:
+      - master
+    event:
+      - push
+
+- name: publish_s3_release
+  image: plugins/s3
+  settings:
+    bucket: catalogo-mf
+    access_key:
+      from_secret: aws_access_key_id
+    secret_key:
+      from_secret: aws_secret_access_key
+    region: us-east-1
+    source: dist/**/*
+    target: /${DRONE_REPO_NAME}
+    strip_prefix: dist/
+  when:
+    branch:
+      - release/*
+    event:
+      - push
+
+- name: publish_s3_master
+  image: plugins/s3
+  settings:
+    bucket: catalogo-mf
+    access_key:
+      from_secret: aws_access_key_id
+    secret_key:
+      from_secret: aws_secret_access_key
+    region: us-east-1
+    source: dist/**/*
+    target: /${DRONE_REPO_NAME}
+    strip_prefix: dist/
+  when:
+    branch:
+      - master
+    event:
+      - push
+
+- name: run_sonar_scanner
+  image: aosapps/drone-sonar-plugin
+  settings:
+    sonar_host:
+      from_secret: SONAR_HOST
+    sonar_token:
+      from_secret: SONAR_TOKEN
+  when:
+    branch:
+      - develop
+      - feature/*
+      - release/*
+    event:
+      - push
