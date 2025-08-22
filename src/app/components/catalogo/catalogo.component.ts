@@ -1,5 +1,4 @@
 import { Component, signal } from '@angular/core';
-import { NgFor } from '@angular/common';
 import { TranslatePipe } from '@ngx-translate/core';
 
 interface Aplicativo {
@@ -11,7 +10,7 @@ interface Aplicativo {
 
 @Component({
   selector: 'catalogo',
-  imports: [NgFor, TranslatePipe],
+  imports: [TranslatePipe],
   templateUrl: './catalogo.component.html',
   styleUrl: './catalogo.component.scss'
 })

@@ -1,16 +1,147 @@
 <section class="catalogo-container">
   <div class="catalogo-programas">
-    <h2>GAIA - Gestión administrativa</h2>
+    <h2>{{ 'Gaia.titulo' | translate }}</h2>
     <div class="app-grid">
-      <a *ngFor="let app of aplicaciones()" class="app-card" [href]="app.enlace" target="_blank" >
+      <a class="app-card" [href]="'Gaia.Agora.enlace' | translate" target="_blank">
         <div class="card-inner">
           <div class="card-front">
-            <img [src]="app.imagen" [alt]="app.nombre" class="app-image" />
+            <img [src]="'Gaia.Agora.imagen' | translate" [alt]="'Gaia.Agora.nombre' | translate" class="app-image" />
           </div>
-
           <div class="card-back">
-            <h2 class="nombre-progama">{{ app.nombre }}</h2>
-            <p class="descripcion">{{ app.descripcion }}</p>
+            <h2 class="nombre-progama">{{ 'Gaia.Agora.nombre' | translate }}</h2>
+            <p class="descripcion">{{ 'Gaia.Agora.descripcion' | translate }}</p>
+          </div>
+        </div>
+      </a>
+
+      <a class="app-card" [href]="'Gaia.Argo.enlace' | translate" target="_blank">
+        <div class="card-inner">
+          <div class="card-front">
+            <img [src]="'Gaia.Argo.imagen' | translate" [alt]="'Gaia.Argo.nombre' | translate" class="app-image" />
+          </div>
+          <div class="card-back">
+            <h2 class="nombre-progama">{{ 'Gaia.Argo.nombre' | translate }}</h2>
+            <p class="descripcion">{{ 'Gaia.Argo.descripcion' | translate }}</p>
+          </div>
+        </div>
+      </a>
+
+      <a class="app-card" [href]="'Gaia.ArkaI.enlace' | translate" target="_blank">
+        <div class="card-inner">
+          <div class="card-front">
+            <img [src]="'Gaia.ArkaI.imagen' | translate" [alt]="'Gaia.ArkaI.nombre' | translate" class="app-image" />
+          </div>
+          <div class="card-back">
+            <h2 class="nombre-progama">{{ 'Gaia.ArkaI.nombre' | translate }}</h2>
+            <p class="descripcion">{{ 'Gaia.ArkaI.descripcion' | translate }}</p>
+          </div>
+        </div>
+      </a>
+
+      <a class="app-card" [href]="'Gaia.ArkaII.enlace' | translate" target="_blank">
+        <div class="card-inner">
+          <div class="card-front">
+            <img [src]="'Gaia.ArkaII.imagen' | translate" [alt]="'Gaia.ArkaII.nombre' | translate" class="app-image" />
+          </div>
+          <div class="card-back">
+            <h2 class="nombre-progama">{{ 'Gaia.ArkaII.nombre' | translate }}</h2>
+            <p class="descripcion">{{ 'Gaia.ArkaII.descripcion' | translate }}</p>
+          </div>
+        </div>
+      </a>
+
+      <a class="app-card" [href]="'Gaia.ModuloCumplidos.enlace' | translate" target="_blank">
+        <div class="card-inner">
+          <div class="card-front">
+            <img [src]="'Gaia.ModuloCumplidos.imagen' | translate" [alt]="'Gaia.ModuloCumplidos.nombre' | translate" class="app-image" />
+          </div>
+          <div class="card-back">
+            <h2 class="nombre-progama">{{ 'Gaia.ModuloCumplidos.nombre' | translate }}</h2>
+            <p class="descripcion">{{ 'Gaia.ModuloCumplidos.descripcion' | translate }}</p>
+          </div>
+        </div>
+      </a>
+
+      <a class="app-card" [href]="'Gaia.Oikos.enlace' | translate" target="_blank">
+        <div class="card-inner">
+          <div class="card-front">
+            <img [src]="'Gaia.Oikos.imagen' | translate" [alt]="'Gaia.Oikos.nombre' | translate" class="app-image" />
+          </div>
+          <div class="card-back">
+            <h2 class="nombre-progama">{{ 'Gaia.Oikos.nombre' | translate }}</h2>
+            <p class="descripcion">{{ 'Gaia.Oikos.descripcion' | translate }}</p>
+          </div>
+        </div>
+      </a>
+
+      <a class="app-card" [href]="'Gaia.Perseo.enlace' | translate" target="_blank">
+        <div class="card-inner">
+          <div class="card-front">
+            <img [src]="'Gaia.Perseo.imagen' | translate" [alt]="'Gaia.Perseo.nombre' | translate" class="app-image" />
+          </div>
+          <div class="card-back">
+            <h2 class="nombre-progama">{{ 'Gaia.Perseo.nombre' | translate }}</h2>
+            <p class="descripcion">{{ 'Gaia.Perseo.descripcion' | translate }}</p>
+          </div>
+        </div>
+      </a>
+
+      <a class="app-card" [href]="'Gaia.ModuloResoluciones.enlace' | translate" target="_blank">
+        <div class="card-inner">
+          <div class="card-front">
+            <img [src]="'Gaia.ModuloResoluciones.imagen' | translate" [alt]="'Gaia.ModuloResoluciones.nombre' | translate" class="app-image" />
+          </div>
+          <div class="card-back">
+            <h2 class="nombre-progama">{{ 'Gaia.ModuloResoluciones.nombre' | translate }}</h2>
+            <p class="descripcion">{{ 'Gaia.ModuloResoluciones.descripcion' | translate }}</p>
+          </div>
+        </div>
+      </a>
+
+      <a class="app-card" [href]="'Gaia.Sisifo.enlace' | translate" target="_blank">
+        <div class="card-inner">
+          <div class="card-front">
+            <img [src]="'Gaia.Sisifo.imagen' | translate" [alt]="'Gaia.Sisifo.nombre' | translate" class="app-image" />
+          </div>
+          <div class="card-back">
+            <h2 class="nombre-progama">{{ 'Gaia.Sisifo.nombre' | translate }}</h2>
+            <p class="descripcion">{{ 'Gaia.Sisifo.descripcion' | translate }}</p>
+          </div>
+        </div>
+      </a>
+
+      <a class="app-card" [href]="'Gaia.Temis.enlace' | translate" target="_blank">
+        <div class="card-inner">
+          <div class="card-front">
+            <img [src]="'Gaia.Temis.imagen' | translate" [alt]="'Gaia.Temis.nombre' | translate" class="app-image" />
+          </div>
+          <div class="card-back">
+            <h2 class="nombre-progama">{{ 'Gaia.Temis.nombre' | translate }}</h2>
+            <p class="descripcion">{{ 'Gaia.Temis.descripcion' | translate }}</p>
+          </div>
+        </div>
+      </a>
+
+      <a class="app-card" [href]="'Gaia.Iris.enlace' | translate" target="_blank">
+        <div class="card-inner">
+          <div class="card-front">
+            <img [src]="'Gaia.Iris.imagen' | translate" [alt]="'Gaia.Iris.nombre' | translate" class="app-image" />
+          </div>
+          <div class="card-back">
+            <h2 class="nombre-progama">{{ 'Gaia.Iris.nombre' | translate }}</h2>
+            <p class="descripcion">{{ 'Gaia.Iris.descripcion' | translate }}</p>
+          </div>
+        </div>
+      </a>
+
+      <a class="app-card" [href]="'Gaia.UdApp.enlace' | translate" target="_blank">
+        <div class="card-inner">
+          <div class="card-front">
+            <img [src]="'Gaia.UdApp.imagen' | translate" [alt]="'Gaia.UdApp.nombre' | translate" class="app-image" />
+          </div>
+          <div class="card-back">
+            <h2 class="nombre-progama">{{ 'Gaia.UdApp.nombre' | translate }}</h2>
+            <p class="descripcion">{{ 'Gaia.UdApp.descripcion' | translate }}</p>
           </div>
         </div>
       </a>
@@ -18,17 +149,100 @@
   </div>
 
   <div class="catalogo-programas">
-    <h2>URANO - Gestión académica</h2>
+    <h2>{{ 'Urano.titulo' | translate }}</h2>
     <div class="app-grid">
-      <a *ngFor="let app of aplicacionesUrano()" class="app-card" [href]="app.enlace" target="_blank">
+      <a class="app-card" [href]="'Urano.Apea.enlace' | translate" target="_blank">
         <div class="card-inner">
           <div class="card-front">
-            <img [src]="app.imagen" [alt]="app.nombre" class="app-image" />
+            <img [src]="'Urano.Apea.imagen' | translate" [alt]="'Urano.Apea.nombre' | translate" class="app-image" />
           </div>
-
           <div class="card-back">
-            <h2 class="nombre-progama">{{ app.nombre }}</h2>
-            <p class="descripcion">{{ app.descripcion }}</p>
+            <h2 class="nombre-progama">{{ 'Urano.Apea.nombre' | translate }}</h2>
+            <p class="descripcion">{{ 'Urano.Apea.descripcion' | translate }}</p>
+          </div>
+        </div>
+      </a>
+
+      <a class="app-card" [href]="'Urano.Jano.enlace' | translate" target="_blank">
+        <div class="card-inner">
+          <div class="card-front">
+            <img [src]="'Urano.Jano.imagen' | translate" [alt]="'Urano.Jano.nombre' | translate" class="app-image" />
+          </div>
+          <div class="card-back">
+            <h2 class="nombre-progama">{{ 'Urano.Jano.nombre' | translate }}</h2>
+            <p class="descripcion">{{ 'Urano.Jano.descripcion' | translate }}</p>
+          </div>
+        </div>
+      </a>
+
+      <a class="app-card" [href]="'Urano.Kyron.enlace' | translate" target="_blank">
+        <div class="card-inner">
+          <div class="card-front">
+            <img [src]="'Urano.Kyron.imagen' | translate" [alt]="'Urano.Kyron.nombre' | translate" class="app-image" />
+          </div>
+          <div class="card-back">
+            <h2 class="nombre-progama">{{ 'Urano.Kyron.nombre' | translate }}</h2>
+            <p class="descripcion">{{ 'Urano.Kyron.descripcion' | translate }}</p>
+          </div>
+        </div>
+      </a>
+
+      <a class="app-card" [href]="'Urano.Polux.enlace' | translate" target="_blank">
+        <div class="card-inner">
+          <div class="card-front">
+            <img [src]="'Urano.Polux.imagen' | translate" [alt]="'Urano.Polux.nombre' | translate" class="app-image" />
+          </div>
+          <div class="card-back">
+            <h2 class="nombre-progama">{{ 'Urano.Polux.nombre' | translate }}</h2>
+            <p class="descripcion">{{ 'Urano.Polux.descripcion' | translate }}</p>
+          </div>
+        </div>
+      </a>
+
+      <a class="app-card" [href]="'Urano.Sga.enlace' | translate" target="_blank">
+        <div class="card-inner">
+          <div class="card-front">
+            <img [src]="'Urano.Sga.imagen' | translate" [alt]="'Urano.Sga.nombre' | translate" class="app-image" />
+          </div>
+          <div class="card-back">
+            <h2 class="nombre-progama">{{ 'Urano.Sga.nombre' | translate }}</h2>
+            <p class="descripcion">{{ 'Urano.Sga.descripcion' | translate }}</p>
+          </div>
+        </div>
+      </a>
+
+      <a class="app-card" [href]="'Urano.SgaPosgrado.enlace' | translate" target="_blank">
+        <div class="card-inner">
+          <div class="card-front">
+            <img [src]="'Urano.SgaPosgrado.imagen' | translate" [alt]="'Urano.SgaPosgrado.nombre' | translate" class="app-image" />
+          </div>
+          <div class="card-back">
+            <h2 class="nombre-progama">{{ 'Urano.SgaPosgrado.nombre' | translate }}</h2>
+            <p class="descripcion">{{ 'Urano.SgaPosgrado.descripcion' | translate }}</p>
+          </div>
+        </div>
+      </a>
+
+      <a class="app-card" [href]="'Urano.Siciud.enlace' | translate" target="_blank">
+        <div class="card-inner">
+          <div class="card-front">
+            <img [src]="'Urano.Siciud.imagen' | translate" [alt]="'Urano.Siciud.nombre' | translate" class="app-image" />
+          </div>
+          <div class="card-back">
+            <h2 class="nombre-progama">{{ 'Urano.Siciud.nombre' | translate }}</h2>
+            <p class="descripcion">{{ 'Urano.Siciud.descripcion' | translate }}</p>
+          </div>
+        </div>
+      </a>
+
+      <a class="app-card" [href]="'Urano.concursoDocente.enlace' | translate" target="_blank">
+        <div class="card-inner">
+          <div class="card-front">
+            <img [src]="'Urano.concursoDocente.imagen' | translate" [alt]="'Urano.concursoDocente.nombre' | translate" class="app-image" />
+          </div>
+          <div class="card-back">
+            <h2 class="nombre-progama">{{ 'Urano.concursoDocente.nombre' | translate }}</h2>
+            <p class="descripcion">{{ 'Urano.concursoDocente.descripcion' | translate }}</p>
           </div>
         </div>
       </a>
@@ -36,17 +250,52 @@
   </div>
 
   <div class="catalogo-programas">
-    <h2>NIX - Gestión financiera</h2>
+    <h2>{{ 'Nix.titulo' | translate }}</h2>
     <div class="app-grid">
-      <a *ngFor="let app of aplicacionesNix()" class="app-card" [href]="app.enlace" target="_blank">
+      <a class="app-card" [href]="'Nix.Titan.enlace' | translate" target="_blank">
         <div class="card-inner">
           <div class="card-front">
-            <img [src]="app.imagen" [alt]="app.nombre" class="app-image" />
+            <img [src]="'Nix.Titan.imagen' | translate" [alt]="'Nix.Titan.nombre' | translate" class="app-image" />
           </div>
-
           <div class="card-back">
-            <h2 class="nombre-progama">{{ app.nombre }}</h2>
-            <p class="descripcion">{{ app.descripcion }}</p>
+            <h2 class="nombre-progama">{{ 'Nix.Titan.nombre' | translate }}</h2>
+            <p class="descripcion">{{ 'Nix.Titan.descripcion' | translate }}</p>
+          </div>
+        </div>
+      </a>
+
+      <a class="app-card" [href]="'Nix.Sisgplan.enlace' | translate" target="_blank">
+        <div class="card-inner">
+          <div class="card-front">
+            <img [src]="'Nix.Sisgplan.imagen' | translate" [alt]="'Nix.Sisgplan.nombre' | translate" class="app-image" />
+          </div>
+          <div class="card-back">
+            <h2 class="nombre-progama">{{ 'Nix.Sisgplan.nombre' | translate }}</h2>
+            <p class="descripcion">{{ 'Nix.Sisgplan.descripcion' | translate }}</p>
+          </div>
+        </div>
+      </a>
+
+      <a class="app-card" [href]="'Nix.Samanta.enlace' | translate" target="_blank">
+        <div class="card-inner">
+          <div class="card-front">
+            <img [src]="'Nix.Samanta.imagen' | translate" [alt]="'Nix.Samanta.nombre' | translate" class="app-image" />
+          </div>
+          <div class="card-back">
+            <h2 class="nombre-progama">{{ 'Nix.Samanta.nombre' | translate }}</h2>
+            <p class="descripcion">{{ 'Nix.Samanta.descripcion' | translate }}</p>
+          </div>
+        </div>
+      </a>
+
+      <a class="app-card" [href]="'Nix.Sofia.enlace' | translate" target="_blank">
+        <div class="card-inner">
+          <div class="card-front">
+            <img [src]="'Nix.Sofia.imagen' | translate" [alt]="'Nix.Sofia.nombre' | translate" class="app-image" />
+          </div>
+          <div class="card-back">
+            <h2 class="nombre-progama">{{ 'Nix.Sofia.nombre' | translate }}</h2>
+            <p class="descripcion">{{ 'Nix.Sofia.descripcion' | translate }}</p>
           </div>
         </div>
       </a>
@@ -54,43 +303,40 @@
   </div>
 
   <div class="catalogo-programas">
-    <h2>ATHENEA - Gestión del conocimiento</h2>
+    <h2>{{ 'ATHENEA.titulo' | translate }}</h2>
     <div class="app-grid">
-      <!--<a *ngFor="let app of aplicacionesAthenea()" class="app-card" [href]="app.enlace" target="_blank">
+      <a class="app-card" [href]="'ATHENEA.Knowage.enlace' | translate" target="_blank">
         <div class="card-inner">
           <div class="card-front">
-            <img [src]="app.imagen" [alt]="app.nombre" class="app-image" />
+            <img [src]="'ATHENEA.Knowage.imagen' | translate" [alt]="'ATHENEA.Knowage.nombre' | translate" class="app-image" />
           </div>
-
           <div class="card-back">
-            <h2 class="nombre-progama">{{ app.nombre }}</h2>
-            <p class="descripcion">{{ app.descripcion }}</p>
+            <h2 class="nombre-progama">{{ 'ATHENEA.Knowage.nombre' | translate }}</h2>
+            <p class="descripcion">{{ 'ATHENEA.Knowage.descripcion' | translate }}</p>
           </div>
         </div>
-      </a>-->
+      </a>
 
-      <a class="app-card" href="https://inteligenciainstitucional.portaloas.udistrital.edu.co/knowage" target="_blank">
+      <a class="app-card" [href]="'ATHENEA.Metabase.enlace' | translate" target="_blank">
         <div class="card-inner">
           <div class="card-front">
-            <img src="assets/images/knowage.png" alt="Knowage" class="app-image" />
+            <img [src]="'ATHENEA.Metabase.imagen' | translate" [alt]="'ATHENEA.Metabase.nombre' | translate" class="app-image" />
           </div>
-
           <div class="card-back">
-            <h2 class="nombre-progama">Knowage</h2>
+            <h2 class="nombre-progama">{{ 'ATHENEA.Metabase.nombre' | translate }}</h2>
             <p class="descripcion">{{ 'ATHENEA.Metabase.descripcion' | translate }}</p>
           </div>
         </div>
       </a>
 
-      <a class="app-card" href="https://inteligenciainstitucional.portaloas.udistrital.edu.co/knowage" target="_blank">
+      <a class="app-card" [href]="'ATHENEA.baseConocimiento.enlace' | translate" target="_blank">
         <div class="card-inner">
           <div class="card-front">
-            <img src="assets/images/knowage.png" alt="Knowage" class="app-image" />
+            <img [src]="'ATHENEA.baseConocimiento.imagen' | translate" [alt]="'ATHENEA.baseConocimiento.nombre' | translate" class="app-image" />
           </div>
-
           <div class="card-back">
-            <h2 class="nombre-progama">Knowage</h2>
-            <p class="descripcion">Sistema de análisis de información cruda y gestión de reportes.</p>
+            <h2 class="nombre-progama">{{ 'ATHENEA.baseConocimiento.nombre' | translate }}</h2>
+            <p class="descripcion">{{ 'ATHENEA.baseConocimiento.descripcion' | translate }}</p>
           </div>
         </div>
       </a>

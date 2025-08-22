@@ -28,7 +28,9 @@ export class HeaderComponent{
     private translate: TranslateService
   ) {
     this.langCookie = getCookie('lang') || 'es';
-    this.translate.setDefaultLang(this.langCookie);
+    //this.translate.setDefaultLang(this.langCookie);
+    this.translate.setDefaultLang('es');  // idioma base por defecto
+  this.translate.use(this.langCookie); 
   }
 
   cambiarIdioma(lang: string) {
@@ -38,7 +40,8 @@ export class HeaderComponent{
       detail: { answer: lang },
     });
     window.dispatchEvent(event);
-    this.translate.setDefaultLang(lang);
+    //this.translate.setDefaultLang(lang);
+    this.translate.use(lang);
   }
 }
 
