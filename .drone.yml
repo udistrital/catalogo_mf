@@ -29,7 +29,7 @@ steps:
 - name: publish_s3_release
   image: plugins/s3
   settings:
-    bucket: catalogo-mf
+    bucket: cliente-pruebas
     access_key:
       from_secret: aws_access_key_id
     secret_key:
@@ -47,7 +47,7 @@ steps:
 - name: publish_s3_master
   image: plugins/s3
   settings:
-    bucket: catalogo-mf
+    bucket: cliente-prod
     access_key:
       from_secret: aws_access_key_id
     secret_key:
@@ -62,17 +62,3 @@ steps:
     event:
       - push
 
-- name: run_sonar_scanner
-  image: aosapps/drone-sonar-plugin
-  settings:
-    sonar_host:
-      from_secret: SONAR_HOST
-    sonar_token:
-      from_secret: SONAR_TOKEN
-  when:
-    branch:
-      - develop
-      - feature/*
-      - release/*
-    event:
-      - push
