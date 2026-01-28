@@ -23,7 +23,7 @@
     "titulo": "ATHENEA - Gestión del conocimiento",
     "Knowage": {
       "nombre": "Knowage",
-      "descripcion": "Sistema de análisis de información cruda y gestión de reportes.",
+      "descripcion": "Sistema para la gestión de reportes.",
       "enlace": "https://inteligenciainstitucional.portaloas.udistrital.edu.co/knowage",
       "imagen": "assets/images/knowage.png"
     }, 
@@ -44,27 +44,33 @@
     "titulo": "NIX - Gestión financiera",
     "Titan": {
       "nombre": "Titán",
-      "descripcion": "Sistema para construir las diferentes nóminas y pago de honorarios de compromisos contractuales.",
+      "descripcion": "Sistema de liquidicación institucional.",
       "enlace": "https://titan.portaloas.udistrital.edu.co",
       "imagen": "assets/images/titan.png"
     },
     "Sisgplan": {
       "nombre": "Sisgplan",
-      "descripcion": "Sistema para apoyar los procesos financieros y generar los reportes a entes de control.",
+      "descripcion": "Sistema de planeación y seguimiento a la gestión de planes de acción.",
       "enlace": "https://planeacion.portaloas.udistrital.edu.co",
       "imagen": "assets/images/sisgplan.png"
     },
     "Samanta": {
       "nombre": "Samanta",
-      "descripcion": "Sistema de comunicación entre usuario y Unión Soluciones, incluyendo casos de soporte de estos.",
+      "descripcion": "Sistema de requerimientos a sofia.",
       "enlace": "",
       "imagen": "assets/images/samanta.png"
     },
     "Sofia": {
       "nombre": "Sofia",
-      "descripcion": "Sistema de información financiera que facilita la gestión contable y financiera.",
+      "descripcion": "Sistema de informacion para la gestion contable y financiera.",
       "enlace": "https://udistrital-sofia.unionsoluciones.com/seguridadweb/webcommon/acceso.jsf",
       "imagen": "assets/images/sofia.png"
+    },
+    "Cycapital": {
+      "nombre": "Cycapital",
+      "descripcion": "Sistema de informacion para la gestion contable y financiera.",
+      "enlace": "https://sicapital.intranetoas.udistrital.edu.co:7777/sicapital/",
+      "imagen": "assets/images/cycapital.png"
     }
   },
   "Urano": {
@@ -113,7 +119,7 @@
     },
     "concursoDocente": {
       "nombre": "Concurso docente",
-      "descripcion": "Sistema para el registro de vida de docentes.",
+      "descripcion": "Sistema para la gestion del concurso docente.",
       "enlace": "https://funcionarios.portaloas.udistrital.edu.co/concurso",
       "imagen": "assets/images/concursoDocente.png"
     }

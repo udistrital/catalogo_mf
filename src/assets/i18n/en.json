@@ -62,9 +62,15 @@
     },
     "Sofia": {
       "nombre": "Sofia",
-      "descripcion": "Financial information system that facilitates accounting and financial management.",
+      "descripcion": "Information system for accounting and financial management.",
       "enlace": "https://udistrital-sofia.unionsoluciones.com/seguridadweb/webcommon/acceso.jsf",
       "imagen": "assets/images/sofia.png"
+    },
+    "Cycapital": {
+      "nombre": "Cycapital",
+      "descripcion": "Information system for accounting and financial management.",
+      "enlace": "https://sicapital.intranetoas.udistrital.edu.co:7777/sicapital/",
+      "imagen": "assets/images/cycapital.png"
     }
   },
   "Urano": {
