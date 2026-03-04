@@ -154,18 +154,6 @@ export class CatalogoComponent {
       descripcion: 'Sistema para apoyar los procesos financieros y generar los reportes a entes de control.',
       enlace: 'https://planeacion.portaloas.udistrital.edu.co',
       imagen: 'assets/images/sisgplan.png'
-    },
-    {
-      nombre: 'Samanta',
-      descripcion: 'Sistema de comunicación entre usuario y Unión Soluciones, incluyendo casos de soporte de estos.',
-      enlace: '',
-      imagen: 'assets/images/samanta.png'
-    },
-    {
-      nombre: 'Sofia',
-      descripcion: 'Sistema de información financiera que facilita la gestión contable y financiera.',
-      enlace: 'https://udistrital-sofia.unionsoluciones.com/seguridadweb/webcommon/acceso.jsf',
-      imagen: 'assets/images/sofia.png'
     }
   ]);
 
