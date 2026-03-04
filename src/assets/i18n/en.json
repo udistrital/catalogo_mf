@@ -54,23 +54,11 @@
       "enlace": "https://planeacion.portaloas.udistrital.edu.co",
       "imagen": "assets/images/sisgplan.png"
     },
-    "Samanta": {
-      "nombre": "Samanta",
-      "descripcion": "Communication system between users and Unión Soluciones, including support cases.",
-      "enlace": "",
-      "imagen": "assets/images/samanta.png"
-    },
-    "Sofia": {
-      "nombre": "Sofia",
-      "descripcion": "Information system for accounting and financial management.",
-      "enlace": "https://udistrital-sofia.unionsoluciones.com/seguridadweb/webcommon/acceso.jsf",
-      "imagen": "assets/images/sofia.png"
-    },
-    "Cycapital": {
-      "nombre": "Cycapital",
+    "Si-Capital": {
+      "nombre": "Si-Capital",
       "descripcion": "Information system for accounting and financial management.",
       "enlace": "https://sicapital.intranetoas.udistrital.edu.co:7777/sicapital/",
-      "imagen": "assets/images/cycapital.png"
+      "imagen": "assets/images/siCapital.png"
     }
   },
   "Urano": {
