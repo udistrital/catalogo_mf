@@ -54,23 +54,11 @@
       "enlace": "https://planeacion.portaloas.udistrital.edu.co",
       "imagen": "assets/images/sisgplan.png"
     },
-    "Samanta": {
-      "nombre": "Samanta",
-      "descripcion": "Sistema de requerimientos a sofia.",
-      "enlace": "",
-      "imagen": "assets/images/samanta.png"
-    },
-    "Sofia": {
-      "nombre": "Sofia",
-      "descripcion": "Sistema de informacion para la gestion contable y financiera.",
-      "enlace": "https://udistrital-sofia.unionsoluciones.com/seguridadweb/webcommon/acceso.jsf",
-      "imagen": "assets/images/sofia.png"
-    },
-    "Cycapital": {
-      "nombre": "Cycapital",
+    "Si-Capital": {
+      "nombre": "Si-Capital",
       "descripcion": "Sistema de informacion para la gestion contable y financiera.",
       "enlace": "https://sicapital.intranetoas.udistrital.edu.co:7777/sicapital/",
-      "imagen": "assets/images/cycapital.png"
+      "imagen": "assets/images/siCapital.png"
     }
   },
   "Urano": {
