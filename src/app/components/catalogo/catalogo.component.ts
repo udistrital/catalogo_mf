@@ -84,10 +84,10 @@ export class CatalogoComponent {
       imagen: 'assets/images/iris.png'
     },
     {
-      nombre: 'Ud App',
-      descripcion: 'Aplicación móvil para el uso de carnets de la universidad.',
-      enlace: 'https://play.google.com/store/apps/details?id=com.scrinio.udapp',
-      imagen: 'assets/images/udapp.png'
+      nombre: 'Acceso UD',
+      descripcion: 'Aplicación web para el uso de carnets de la universidad.',
+      enlace: 'https://accesoud.portaloas.udistrital.edu.co',
+      imagen: 'assets/images/metis.png'
     }
   ]);
 
