@@ -180,11 +180,11 @@
       "enlace": "https://iris.portaloas.udistrital.edu.co/scp/login.php",
       "imagen": "assets/images/iris.png"
     },
-    "UdApp": {
-      "nombre": "Ud App",
-      "descripcion": "Mobile application for using university ID cards.",
-      "enlace": "https://play.google.com/store/apps/details?id=com.scrinio.udapp",
-      "imagen": "assets/images/udapp.png"
+    "AccesoUD": {
+      "nombre": "Acceso UD",
+      "descripcion": "Web application for using university ID cards.",
+      "enlace": "https://accesoud.portaloas.udistrital.edu.co",
+      "imagen": "assets/images/metis.png"
     }
   }
 
